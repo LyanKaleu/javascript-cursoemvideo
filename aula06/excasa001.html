@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Solicita ao usuário que digite um número e armazena o valor em uma variável
+        var numeroTexto = prompt("Digite um número:");
+
+        // Converte o valor digitado em um número inteiro usando parseInt()
+        var numero = parseInt(numeroTexto);
+
+        // Verifica se o valor é um número válido
+        if (!isNaN(numero)) {
+            // Realiza cálculos com o número digitado e exibe o resultado
+            var quadrado = numero * numero;
+            var cubo = numero * numero * numero;
+            alert(`O quadrado de ${numero} é ${quadrado}`);
+            alert(`O cubo de ${numero} é ${cubo}`);
+        } else {
+            // Exibe uma mensagem de erro se o valor digitado não for um número válido
+            alert("Por favor, digite um número válido.");
+        }
+    </script>
+</body>
+</html>
