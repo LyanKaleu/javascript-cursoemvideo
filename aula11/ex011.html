@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Censo Demográfico</title>
+</head>
+<body>
+    <h1>Você mora em qual país?</h1>
+    <p>&Rightarrow;<input type="text" name="txtpais" id="txtpais"></p>
+    <input type="button" value="Confirmar" id="txtresposta" onclick="verificar()">
+    <div id="resultado">
+    </div>
+
+    <script>
+        var pais = document.getElementById("txtpais");
+        var resposta = document.getElementById("txtresposta");
+        var resultado = document.getElementById("resultado");
+
+        function verificar() {
+            if (pais.value == "Brasil") {
+                resultado.innerHTML = `Você é brasileiro!`;
+            } else {
+                resultado.innerHTML = `Você é estrangeiro!`;
+            }
+        }
+    </script>
+</body>
+</html>
